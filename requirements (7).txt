@@ -1,0 +1,15 @@
+facenet-pytorch==2.6.0
+faiss-cpu==1.8.0.post1
+numpy==1.26.4
+opencv-python-headless==4.10.0.84
+streamlit==1.38.0
+tensorflow==2.17.0
+tensorflow-datasets==4.9.6
+tensorflow-hub==0.16.1
+tensorflow-io-gcs-filesystem==0.37.1
+tensorflow-metadata==1.15.0
+tensorflow-probability==0.24.0
+torch==2.2.2
+torchaudio @ https://download.pytorch.org/whl/cu121_full/torchaudio-2.4.0%2Bcu121-cp310-cp310-linux_x86_64.whl#sha256=8bc4c22a701f4567a15cc98ff48c392147583b9ec4157d147025f297bf305acc
+torchsummary==1.5.1
+torchvision==0.17.2
