@@ -20,7 +20,7 @@ files:
 
 4. index.faiss and mon_model are just suffixes but they play an important role.
 
-5.embeddings: where i stock all the embeddings of the five images in a one commun file called embedding which contains a enermous matrix with enermous numbers positve and negative one distracted by CNN.
+ 5.embeddings: where i stock all the embeddings of the five images in a one commun file called embedding which contains a enermous matrix with enermous numbers positve and negative one distracted by CNN.
 
 6. requirements which is the second important page beacause it contains all necessary packages and dependencies we need for.
 
