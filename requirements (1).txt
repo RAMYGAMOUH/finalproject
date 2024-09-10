@@ -1,4 +1,0 @@
-streamlit
-tensorflow==2.17.0
-faiss-cpu
-pillow
