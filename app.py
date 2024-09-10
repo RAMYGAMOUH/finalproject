@@ -1,25 +1,46 @@
+from google.colab import files
+import zipfile
+import os
+
+# Téléversement du fichier zip contenant le dossier 'images'
+uploaded = files.upload()
+
+# Décompresser le fichier zip
+for filename in uploaded.keys():
+    with zipfile.ZipFile(filename, 'r') as zip_ref:
+        zip_ref.extractall('/content')
+
+# Assurez-vous que le dossier 'images' est maintenant dans '/content'
+image_folder = '/content/images'
+import os
+
+# Définir le chemin vers le dossier contenant les images
+image_folder = '/content/images'
+
+# Vérifiez que le dossier existe
+if not os.path.exists(image_folder):
+    print(f"Le dossier {image_folder} n'existe pas.")
+else:
+    print(f"Le dossier {image_folder} est accessible.")
 import cv2
 import os
 
-# Define the path to the folder containing the images
-image_folder = 'images'
-
-# Define the desired size for the resized images
+# Définir la taille souhaitée pour les images redimensionnées
 new_width = 224
 new_height = 224
 
-# Loop through all the images in the folder
+# Parcourir toutes les images du dossier
 for filename in os.listdir(image_folder):
-  if filename.endswith(".jpg") or filename.endswith(".png"):
-    # Load the image
-    image_path = os.path.join(image_folder, filename)
-    img = cv2.imread(image_path)
+    if filename.endswith(".jpg") or filename.endswith(".png"):
+        # Charger l'image
+        image_path = os.path.join(image_folder, filename)
+        img = cv2.imread(image_path)
 
-    # Resize the image
-    resized_img = cv2.resize(img, (new_width, new_height))
+        # Redimensionner l'image
+        resized_img = cv2.resize(img, (new_width, new_height))
 
-    # Save the resized image
-    cv2.imwrite(image_path, resized_img)
+        # Sauvegarder l'image redimensionnée
+        cv2.imwrite(image_path, resized_img)
 
 print("Images resized successfully!")
 
