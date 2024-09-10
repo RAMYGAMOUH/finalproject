@@ -23,7 +23,6 @@ for filename in os.listdir(image_folder):
 
 print("Images resized successfully!")
 
-pip install facenet-pytorch
 
 from facenet_pytorch import MTCNN, InceptionResnetV1
 import torch
@@ -58,7 +57,6 @@ for filename in os.listdir(image_folder):
     else:
       print(f"No face detected in {filename}")
 
-pip install faiss-cpu
 
 import faiss
 import numpy as np
@@ -98,7 +96,6 @@ for filename in os.listdir(image_folder):
     else:
       print(f"No face detected in {filename}")
 
-pip install streamlit tensorflow faiss-cpu pillow
 
 import streamlit as st
 from PIL import Image
