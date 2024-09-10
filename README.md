@@ -2,6 +2,7 @@ final project :
 this project aims to create an app for face recognition .
 
 Steps:
+
 1)- importing data from lwf or celebA, i imported data randomly because of virus problems
 
 2)- making coding for preparation photos, embedding images, stocking embeddings, and creating user interface using different sources like: openface, faiss and so one.
